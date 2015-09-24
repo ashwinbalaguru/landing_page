@@ -1,10 +1,10 @@
 nav, header {
 	margin: 0;
-		padding: 0;
-		border: 0;
-		font-size: 100%;
-		font: inherit;
-		vertical-align: baseline;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
 }
 
 nav, header {
@@ -47,6 +47,8 @@ header p {
 		#logo a {
 			font-size: 1.25em;
 		}
+
+
 #logo {
 				text-align: center;
 				position: relative;
@@ -71,12 +73,16 @@ header p {
 
 		#nav ul {
 			margin: 0;
-		}
+			padding: center;
+			position: relative;
+			}
 
 			#nav ul li {
 				display: inline-block;
 				margin-left: 0.5em;
+				padding-right: 1em;
 				font-size: 0.9em;
+				text-transform: uppercase;
 			}
 
 				#nav ul li a {
@@ -88,4 +94,3 @@ header p {
 					padding: 0 0.5em 0 0.5em;
 					outline: 0;
 				}
-
