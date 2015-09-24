@@ -7,11 +7,6 @@ nav, header {
 		vertical-align: baseline;
 }
 
-nav, header {
-	display: block;
-}
-
-
 header {
 		margin-bottom: 1em;
 	}
@@ -47,22 +42,11 @@ header p {
 		#logo a {
 			font-size: 1.25em;
 		}
-#logo {
-				text-align: center;
-				position: relative;
-				left: 0;
-				top: 0;
-				height: 2.5em;
-				line-height: 2.5em;
-			}
-
-		#logo a {
-					font-size: 1em;
-				}
 
 
-#nav {
-		position: absolute;
+#nav {	
+		/*position: absolute;*/
+		text-align:center;
 		right: 0.5em;
 		top: 0;
 		height: 3em;
@@ -80,6 +64,8 @@ header p {
 			}
 
 				#nav ul li a {
+					padding:0 30px;
+					width:100px;
 					display: block;
 					color: inherit;
 					text-decoration: none;
