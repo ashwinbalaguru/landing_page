@@ -32,10 +32,11 @@ header p {
 
 #logo {
 		position: absolute;
+		float: left;
 		left: 1em;
 		top: 0;
-		height: 3em;
-		line-height: 3em;
+		height: 1em;
+		line-height: 1em;
 		letter-spacing: -1px;
 	}
 
