@@ -10,9 +10,15 @@
     <link rel="stylesheet" type="text/css" href="landing_page.css">
     <link rel="stylesheet" href="foundation-5.5.2/css/normalize.css">
     <link rel="stylesheet" href="foundation-5.5.2/css/foundation.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.5.7/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick-1.5.7/slick/slick-theme.css"/>
 
-
+    <script type="text/javascript" src="jquery/jquery-1.11.3.min.js"></script>
+    <script type="text/javascript" src="jquery/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.5.7/slick/slick.min.js"></script>
+    <script src="js/foundation/foundation.orbit.js"></script>
     <script src="js/vendor/modernizr.js"></script>
+
 </head>
 <body>
 
@@ -20,7 +26,7 @@
     <!-- Nav -->
     <nav id="nav">
     <!-- Logo -->
-      <img id="logo" src="cropped-usa-dissertation-logo.png">
+      <img id="logo" src="images/cropped-usa-dissertation-logo.png">
       <ul>
         <li><a href="landing_page.html">Home</a></li>
         <li><a href="services.html">Services</a></li>
@@ -34,40 +40,75 @@
 
 
 
-      <section>
-        <div>
-          <img src="avengers-wallpapers-2.png">
-        </div>
-      </section>
+  <section>
+    <div>
+      <img src="images/avengers-wallpapers-2.png">
+    </div>
+  </section>
 
-      <section>
-        <div>
+  <section>
+    <div class = "writer">
+      <div class="slide_show">
+        <div><img class = "slider1"src="images/images.jpeg"/></div>
+        <div><img src="images/index.jpeg"/></div>
+        <div><img src="images/images1.jpeg"/></div>
+        <div><img src="images/check.jpeg"/></div>
 
-        </div>
-      </section>
+      </div>
 
+      <h2 class="slider1_text"> Hello Everybody </h2>
 
-      <section>
-        <div>
+    </div>  
 
-        </div>
-      </section>
-
-
-      <section>
-        <div>
-
-        </div>
-      </section>
+  </section>
 
 
-      <section>
-        <div>
+  <section>
+    <div>
 
-        </div>
-      </section>
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+
+    </div>
+  </section>
+
+
+  <section>
+    <div>
+
+    </div>
+  </section>
 
       
-  
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('.slide_show').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true,
+        variableWidth: true
+        });
+    });
+  </script>
+
+  <script type="text/javascript">
+    $(function() {
+    
+    $("h2")
+        .wrapInner("<span>")
+
+    $("h2 br")
+        .before("<span class='spacer'>")
+        .after("<span class='spacer'>");
+
+    });
+  </script>
+
 </body>
 </html> 
